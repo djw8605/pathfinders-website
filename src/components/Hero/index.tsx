@@ -4,14 +4,14 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className={style.heroContainer}>
+    <div className={style.heroContainer} id="about">
       <div className={style.left}>
         <Image
           className={style.map}
           src="/pelican_concept_map.png"
           alt="Pelican Concept Map"
-          width={1000 * 0.7}
-          height={560 * 0.7}
+          width={1000 * 0.5}
+          height={560 * 0.5}
         />
         <p className={style.tagline}>
           A collaboration between 5 projects, working to innovate science-led

@@ -9,8 +9,25 @@ body {
 }
 
 main {
-  max-width: 1600px;
-  margin: 0px auto;
+  min-width: 30%;
+  max-width: 1200px;
+
+  margin: 20px auto;
+  padding: 25px;
+
+  background: #CFE4FF;
+  border-radius: 20px;
+}
+
+hr {
+  width: 85%;
+  margin: 15px auto;
+  padding: 2px;
+
+  border-top: 2px dashed #acbee7ff;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
 }
 
 * {

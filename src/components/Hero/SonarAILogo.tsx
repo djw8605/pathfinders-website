@@ -10,8 +10,8 @@ const SonarAILogo = () => {
           className={`${style.logo} ${style.cuLogo}`}
           src="/cu_logo.png"
           alt="CU Logo"
-          width={192 * 0.5}
-          height={184 * 0.5}
+          width={192 * 0.4}
+          height={184 * 0.4}
         />
         <Image
           className={`${style.logo} ${style.ciresLogo}`}
@@ -24,8 +24,8 @@ const SonarAILogo = () => {
           className={`${style.logo} ${style.noaaLogo}`}
           src="/noaa_logo.png"
           alt="NOAA Logo"
-          width={468 * 0.2}
-          height={469 * 0.2}
+          width={468 * 0.15}
+          height={469 * 0.15}
         />
       </div>
     </div>

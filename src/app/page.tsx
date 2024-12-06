@@ -1,11 +1,14 @@
 import Hero from "@/components/Hero";
+import News from "@/components/News";
+import Strategies from "@/components/Strategies";
 
 const Home = () => {
   return (
-    <main>
+    <div>
       <Hero />
-      <p>Hello world</p>
-    </main>
+      <News />
+      <Strategies />
+    </div>
   );
 };
 
