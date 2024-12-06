@@ -5,7 +5,7 @@ import Link from "next/link";
 const Header = () => {
   return <header className={style.header}>
     <div className={style.nameContainer}>
-      <span className={style.name}>NDC-C Pathfinders</span>
+      <span className={style.name}>Pathfinders</span>
     </div>
     <div className={style.navSection}>
       <Link className={style.link} href="#about">About</Link>

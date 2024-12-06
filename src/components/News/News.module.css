@@ -25,13 +25,19 @@
 /* mobile */
 @media only screen and (max-width: 600px) {
   .wrapper {
-    flex-direction: row;
+    display: block;
   }
 }
 
 /* tablet */
 @media only screen and (max-width: 900px) {
   .wrapper {
+    display: block;
+    height: 100%;
+  }
+
+  .image {
+    width: 100%;
     height: auto;
   }
 }
