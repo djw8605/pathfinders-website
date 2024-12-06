@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import News from "@/components/News";
+import Team from "@/components/Team";
 import Strategies from "@/components/Strategies";
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
       <Hero />
       <News />
       <Strategies />
+      <Team />
     </div>
   );
 };

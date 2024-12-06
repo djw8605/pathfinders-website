@@ -2,6 +2,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
     width: 100%;
     height: 50px;
     background: #CFE4FF;
