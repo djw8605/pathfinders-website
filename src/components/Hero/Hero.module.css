@@ -1,6 +1,6 @@
 .heroContainer {
   width: 100%;
-  height: calc(75vh - 20px - 50px);
+  /* height: calc(75vh - 20px - 50px); */
 
   display: flex;
   justify-content: space-around;
