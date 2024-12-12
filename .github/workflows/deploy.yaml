@@ -74,6 +74,7 @@ jobs:
         run: |
           
           npm run export
+          pwd
           ls -l
           find ./out | sed -e "s/[^-][^\/]*\//  |/g" -e "s/|\([^ ]\)/|-\1/"
 
