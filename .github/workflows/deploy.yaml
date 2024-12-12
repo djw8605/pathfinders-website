@@ -76,7 +76,7 @@ jobs:
           npm run build
           pwd
           ls -l
-          cd ../
+          cd ./src
           ls -l
           find ./out | sed -e "s/[^-][^\/]*\//  |/g" -e "s/|\([^ ]\)/|-\1/"
 
