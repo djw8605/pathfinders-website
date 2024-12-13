@@ -10,6 +10,22 @@
     "e e e e";
 }
 
+/* mobile */
+@media only screen and (max-width: 600px) {
+  .grid {
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e";
+  }
+
+  .itemContainer {
+    width: 100%;
+  }
+}
+
 .itemContainer {
   background-color: #cfe4ff;
   width: 100%;
