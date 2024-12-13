@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
+import {ThemeProviderClient} from "@/theme";
 
 export const metadata: Metadata = {
   title: "Pathfinders",
@@ -15,10 +16,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <Header />
-        <main>{children}</main>
-      </body>
+      <ThemeProviderClient>
+        <body>
+          <Header />
+          <main>{children}</main>
+        </body>
+      </ThemeProviderClient>
     </html>
   );
 }

@@ -4,7 +4,7 @@ body {
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Poppins", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 18px;
 }
 
@@ -14,8 +14,6 @@ main {
 
   margin: 0px auto 0px auto;
   padding: 25px;
-
-  background: #CFE4FF;
   border-end-end-radius: 20px;
   border-end-start-radius: 20px;
 }
