@@ -1,29 +1,33 @@
 import { Box, SxProps } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
+import { CSSProperties } from "react";
 
 const newsLink = "https://pelicanplatform.org/user-stories/2024/06/13/noaa-on-the-ospool";
 const newsImage = "https://raw.githubusercontent.com/CHTC/Articles/main/images/noaa-banner.png";
 
 const wrapper: SxProps = {
-  display: "flex",
+  display: {
+    md: "flex",
+    sm: "block",
+  },
   padding: "20px",
   gap: "10px",
 }
 
-const image: React.CSSProperties = {
+const image: CSSProperties = {
   objectFit: "cover",
   aspectRatio: 2,
   width: "auto",
 }
 
-const text: React.CSSProperties = {
+const text: CSSProperties = {
   textAlign: "justify"
 }
 
 const News = () => {
   return (
-    <Link href={newsLink}>
+    <Link href={newsLink} target="_blank">
       <Box sx={wrapper}>
         <Image
           style={image}

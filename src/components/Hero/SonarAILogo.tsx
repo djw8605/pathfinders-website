@@ -1,13 +1,13 @@
 import { Box, SxProps } from "@mui/material";
 import Image from "next/image";
-import React from "react";
+import { CSSProperties } from "react";
 
 const container: SxProps = {
   width: "100%",
   height: "100%",
 };
 
-const name: React.CSSProperties = {
+const name: CSSProperties = {
   display: "block",
   fontSize: "2rem",
   fontWeight: "bold",

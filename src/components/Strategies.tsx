@@ -1,8 +1,9 @@
 import { SxProps } from "@mui/material";
 import { Box } from "@mui/system";
 import Link from "next/link";
+import { CSSProperties } from "react";
 
-const header: React.CSSProperties = {
+const header: CSSProperties = {
   fontSize: "3rem",
   margin: "3rem",
   textAlign: "center",
@@ -29,13 +30,13 @@ const card: SxProps = {
   boxShadow: 1,
 }
 
-const title: React.CSSProperties = {
+const title: CSSProperties = {
   fontSize: "2rem",
   fontWeight: 500,
   marginBottom: "10px",
 }
 
-const link: React.CSSProperties = {
+const link: CSSProperties = {
   textDecoration: "underline",
   fontStyle: "italic",
 }
@@ -45,6 +46,7 @@ function awardLink(name: string, id: string) {
     <Link
       style={link}
       href={`https://www.nsf.gov/awardsearch/showAward?AWD_ID=${id}`}
+      target="_blank"
     >
       {name}
     </Link>

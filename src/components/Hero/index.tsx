@@ -1,5 +1,6 @@
 import { Box, SxProps } from "@mui/material";
 import Image from "next/image";
+import { CSSProperties } from "react";
 import PartnerList from "./PartnerList";
 
 const heroContainer: SxProps = {
@@ -39,7 +40,7 @@ const right: SxProps = {
   }
 }
 
-const tagline: React.CSSProperties = {
+const tagline: CSSProperties = {
   fontSize: "1.5rem",
   lineHeight: "1.25",
   textAlign: "left",
@@ -50,7 +51,7 @@ const Hero = () => {
     <Box sx={heroContainer} id="about">
       <Box sx={left}>
         <Image
-          style={{objectFit: "contain", width: "100%", height: "auto"}}
+          style={{ objectFit: "contain", width: "100%", height: "auto" }}
           src="images/pelican_concept_map.png"
           alt="Pelican Concept Map"
           width={1000 * 0.5}

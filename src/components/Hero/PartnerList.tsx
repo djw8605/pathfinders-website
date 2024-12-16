@@ -1,13 +1,11 @@
 import { Box, SxProps } from "@mui/material";
 import Image from "next/image";
+import { CSSProperties } from "react";
 import SonarAILogo from "./SonarAILogo";
 
 const grid: SxProps = {
   width: "100%",
-  display: {
-    md: "grid",
-    sm: "block",
-  },
+  display: "grid",
   gap: "10px",
   gridAutoColumns: "1fr",
   gridTemplateAreas: `
@@ -33,7 +31,7 @@ const itemContainer: SxProps = {
   alignItems: "center",
 }
 
-const logo: React.CSSProperties = {
+const logo: CSSProperties = {
   width: "100%",
   height: "auto",
   objectFit: "contain",
@@ -52,7 +50,7 @@ const pelicanItem: SxProps = {
   alignItems: "center",
 }
 
-const pelicanLogo: React.CSSProperties = {
+const pelicanLogo: CSSProperties = {
   width: "60%",
   height: "auto",
   objectFit: "contain",
