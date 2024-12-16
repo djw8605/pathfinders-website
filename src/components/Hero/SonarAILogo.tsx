@@ -1,34 +1,59 @@
+import { Box, SxProps } from "@mui/material";
 import Image from "next/image";
-import style from "./SonarAILogo.module.css";
+import React from "react";
+
+const container: SxProps = {
+  width: "100%",
+  height: "100%",
+};
+
+const name: React.CSSProperties = {
+  display: "block",
+  fontSize: "2rem",
+  fontWeight: "bold",
+  marginBottom: "20px",
+  textAlign: "center",
+}
+
+const logosContainer: SxProps = {
+  display: "grid",
+  justifyContent: "center",
+  alignItems: "center",
+
+  gridTemplateAreas: `
+    "a a b b"
+    ". c c ."
+  `,
+}
 
 const SonarAILogo = () => {
   return (
-    <div className={style.container}>
-      <span className={style.name}>Sonar AI</span>
-      <div className={style.logos}>
+    <Box sx={container}>
+      <span style={name}>Sonar AI</span>
+      <Box sx={logosContainer}>
         <Image
-          className={`${style.logo} ${style.cuLogo}`}
-          src="/cu_logo.png"
+          style={{ objectFit: "contain", gridTemplate: "a" }}
+          src="images/logos/cu_logo.png"
           alt="CU Logo"
           width={192 * 0.4}
           height={184 * 0.4}
         />
         <Image
-          className={`${style.logo} ${style.ciresLogo}`}
-          src="/cires_logo.png"
+          style={{ objectFit: "contain", gridTemplate: "b" }}
+          src="images/logos/cires_logo.png"
           alt="CIRES Logo"
           width={300 * 0.35}
           height={150 * 0.35}
         />
         <Image
-          className={`${style.logo} ${style.noaaLogo}`}
-          src="/noaa_logo.png"
+          style={{ objectFit: "contain", gridTemplate: "c" }}
+          src="images/logos/noaa_logo.png"
           alt="NOAA Logo"
           width={468 * 0.15}
           height={469 * 0.15}
         />
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 };
 
