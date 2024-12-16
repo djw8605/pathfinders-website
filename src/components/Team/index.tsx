@@ -12,7 +12,7 @@ const Team = () => {
   return (
     <div id="team">
       <hr />
-      <h2 style={header}>Team</h2>
+      <h2 style={header}>Team Leaders</h2>
       <People />
     </div>
   );
