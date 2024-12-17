@@ -44,7 +44,7 @@ const People = () => {
         height={200}
         name="Leonardo Bobadilla"
         title="Principal Investigator"
-        project="EnviStor @ FIU"
+        project="EnviStor"
         />
       <PersonCard
         src="images/people/carrie_bell.png"

@@ -20,10 +20,10 @@ const cardContainer: SxProps = {
 }
 
 const card: SxProps = {
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-  justifyContent: "center",
+  // display: "flex",
+  // flexDirection: "column",
+  // alignItems: "center",
+  // justifyContent: "center",
   padding: "20px",
   margin: "10px",
   borderRadius: "20px",

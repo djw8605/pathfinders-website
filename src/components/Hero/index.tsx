@@ -1,7 +1,7 @@
 import { Box, SxProps } from "@mui/material";
 import Image from "next/image";
 import { CSSProperties } from "react";
-import PartnerList from "./PartnerList";
+import PartnerList from "../PartnerList";
 
 const heroContainer: SxProps = {
   display: {
