@@ -2,7 +2,7 @@ import { Box, SxProps } from "@mui/material";
 import PersonCard from "./PersonCard";
 
 const container: SxProps = {
-  display: { sm: "block", md: "flex" },
+  display: "flex",
   flexWrap: "wrap",
   justifyContent: "center",
 };

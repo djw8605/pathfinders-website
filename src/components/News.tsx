@@ -21,6 +21,7 @@ const image: CSSProperties = {
   objectFit: "cover",
   aspectRatio: 2,
   width: "auto",
+  maxWidth: "100%",
 };
 
 const text: CSSProperties = {

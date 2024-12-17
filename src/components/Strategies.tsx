@@ -17,7 +17,10 @@ const header: CSSProperties = {
 };
 
 const cardContainer: SxProps = {
-  display: "grid",
+  display: {
+    xs: "block",
+    sm: "grid",
+  },
   gridTemplateColumns: "1fr 1fr",
   gridTemplateRows: "1fr 1fr",
   gap: "20px",
