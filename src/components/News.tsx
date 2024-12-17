@@ -24,7 +24,7 @@ const image: CSSProperties = {
 };
 
 const text: CSSProperties = {
-  textAlign: "justify",
+  // textAlign: "justify",
 };
 
 const News = () => {
