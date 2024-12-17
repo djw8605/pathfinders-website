@@ -12,8 +12,8 @@ const grid: SxProps = {
     "a a b b"
     "c c d d"
     "e e e e"
-  `
-}
+  `,
+};
 
 const itemContainer: SxProps = {
   bgcolor: "primary.main",
@@ -29,13 +29,13 @@ const itemContainer: SxProps = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-}
+};
 
 const logo: CSSProperties = {
   width: "100%",
   height: "auto",
   objectFit: "contain",
-}
+};
 
 const pelicanItem: SxProps = {
   bgcolor: "secondary.main",
@@ -48,13 +48,13 @@ const pelicanItem: SxProps = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-}
+};
 
 const pelicanLogo: CSSProperties = {
   width: "60%",
   height: "auto",
   objectFit: "contain",
-}
+};
 
 const PartnerList = () => {
   return (

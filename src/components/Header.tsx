@@ -22,9 +22,7 @@ const nameStyle: SxProps = {
 const Header = () => {
   return (
     <Box component="header" sx={headerStyle}>
-      <Box
-        sx={nameContainerStyle}
-      >
+      <Box sx={nameContainerStyle}>
         <Box component="span" sx={nameStyle}>
           Pathfinders
         </Box>

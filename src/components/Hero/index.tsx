@@ -15,8 +15,8 @@ const heroContainer: SxProps = {
 
   justifyContent: "space-around",
   alignItems: "center",
-  gap: "10px"
-}
+  gap: "10px",
+};
 
 const left: SxProps = {
   display: "flex",
@@ -26,8 +26,8 @@ const left: SxProps = {
     md: "100%",
     lg: "50%",
   },
-  padding: "25px"
-}
+  padding: "25px",
+};
 
 const right: SxProps = {
   width: {
@@ -37,14 +37,14 @@ const right: SxProps = {
   padding: {
     md: "0",
     lg: "25px",
-  }
-}
+  },
+};
 
 const tagline: CSSProperties = {
   fontSize: "1.5rem",
   lineHeight: "1.25",
   textAlign: "left",
-}
+};
 
 const Hero = () => {
   return (
@@ -61,10 +61,10 @@ const Hero = () => {
           A collaboration between 5 projects, working to innovate science-led
           pathways through the NSF cyberinfrastructure landscape.
         </p>
-      </Box >
+      </Box>
       <Box sx={right}>
         <PartnerList />
-      </Box >
+      </Box>
     </Box>
   );
 };

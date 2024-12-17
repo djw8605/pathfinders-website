@@ -2,14 +2,19 @@ import { SxProps } from "@mui/material";
 import { Box } from "@mui/system";
 import Link from "next/link";
 import { CSSProperties } from "react";
-import { CodeOutlined, HandshakeOutlined, MemoryOutlined, PublicOutlined } from "@mui/icons-material";
+import {
+  CodeOutlined,
+  HandshakeOutlined,
+  MemoryOutlined,
+  PublicOutlined,
+} from "@mui/icons-material";
 
 const header: CSSProperties = {
   fontSize: "3rem",
   margin: "3rem",
   textAlign: "center",
   fontWeight: 300,
-}
+};
 
 const cardContainer: SxProps = {
   display: "grid",
@@ -17,7 +22,7 @@ const cardContainer: SxProps = {
   gridTemplateRows: "1fr 1fr",
   gap: "20px",
   justifyContent: "center",
-}
+};
 
 const card: SxProps = {
   // display: "flex",
@@ -29,17 +34,17 @@ const card: SxProps = {
   borderRadius: "20px",
   bgcolor: "primary.main",
   boxShadow: 1,
-}
+};
 
 const title: CSSProperties = {
   fontSize: "2rem",
   fontWeight: 500,
-}
+};
 
 const link: CSSProperties = {
   textDecoration: "underline",
   fontStyle: "italic",
-}
+};
 
 const cardTop: SxProps = {
   display: "flex",
@@ -47,14 +52,14 @@ const cardTop: SxProps = {
   alignContent: "center",
   width: "100%",
   marginBottom: "10px",
-}
+};
 
 const icon: SxProps = {
   width: "50px",
   height: "50px",
   marginLeft: "-10px",
   marginBottom: "-30px",
-}
+};
 
 function awardLink(name: string, id: string) {
   return (
@@ -99,7 +104,7 @@ const Strategies = () => {
           </p>
         </Box>
         <Box sx={card}>
-        <Box sx={cardTop}>
+          <Box sx={cardTop}>
             <h3 style={title}>Joint Integrations</h3>
             <CodeOutlined sx={icon} fontSize="large" />
           </Box>
@@ -109,7 +114,7 @@ const Strategies = () => {
           </p>
         </Box>
         <Box sx={card}>
-        <Box sx={cardTop}>
+          <Box sx={cardTop}>
             <h3 style={title}>Broader Impacts</h3>
             <PublicOutlined sx={icon} fontSize="large" />
           </Box>

@@ -6,7 +6,7 @@ const header: CSSProperties = {
   textAlign: "center",
   fontWeight: 300,
   margin: "20px 0",
-}
+};
 
 const Team = () => {
   return (
