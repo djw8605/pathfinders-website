@@ -62,7 +62,7 @@ const PartnerList = () => {
       <Box sx={itemContainer} gridArea="a">
         <Image
           style={logo}
-          src="images/logos/ncar_logo.png"
+          src="/images/logos/ncar_logo.png"
           alt="NCAR Logo"
           width={518 * 0.6}
           height={142 * 0.6}
@@ -71,7 +71,7 @@ const PartnerList = () => {
       <Box sx={itemContainer} gridArea="b">
         <Image
           style={logo}
-          src="images/logos/pism_logo.png"
+          src="/images/logos/pism_logo.png"
           alt="PISM Logo"
           width={1000 * 0.28}
           height={332 * 0.28}
@@ -80,7 +80,7 @@ const PartnerList = () => {
       <Box sx={itemContainer} gridArea="c">
         <Image
           style={logo}
-          src="images/logos/fiu_logo.svg"
+          src="/images/logos/fiu_logo.svg"
           alt="FIU Logo"
           width={221.7}
           height={102.8}
@@ -92,7 +92,7 @@ const PartnerList = () => {
       <Box sx={pelicanItem} gridArea="e">
         <Image
           style={pelicanLogo}
-          src="images/logos/pelican_logo.png"
+          src="/images/logos/pelican_logo.png"
           alt="Pelican Logo"
           width={600}
           height={213}

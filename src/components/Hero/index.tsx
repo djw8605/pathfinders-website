@@ -52,7 +52,7 @@ const Hero = () => {
       <Box sx={left}>
         <Image
           style={{ objectFit: "contain", width: "100%", height: "auto" }}
-          src="images/pelican_concept_map.png"
+          src="/images/pelican_concept_map.png"
           alt="Pelican Concept Map"
           width={1000 * 0.5}
           height={560 * 0.5}

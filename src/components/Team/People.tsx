@@ -11,7 +11,7 @@ const People = () => {
   return (
     <Box sx={container}>
       <PersonCard
-        src="images/people/brian_bockelman.jpg"
+        src="/images/people/brian_bockelman.jpg"
         alt="Headshot of Brian Bockelman"
         width={200}
         height={200}
@@ -20,7 +20,7 @@ const People = () => {
         project="Pelican"
       />
       <PersonCard
-        src="images/people/everette_joseph.jpg"
+        src="/images/people/everette_joseph.jpg"
         alt="Headshot of Everette Joseph"
         width={200}
         height={200}
@@ -29,7 +29,7 @@ const People = () => {
         project="NCAR"
       />
       <PersonCard
-        src="images/people/andy_aschwanden.jpg"
+        src="/images/people/andy_aschwanden.jpg"
         alt="Headshot of Andy Aschwanden"
         width={200}
         height={200}
@@ -38,7 +38,7 @@ const People = () => {
         project="PISM"
       />
       <PersonCard
-        src="images/people/leonardo_bobadilla.png"
+        src="/images/people/leonardo_bobadilla.png"
         alt="Headshot of Leonardo Bobadilla"
         width={200}
         height={200}
@@ -47,7 +47,7 @@ const People = () => {
         project="EnviStor"
       />
       <PersonCard
-        src="images/people/carrie_bell.png"
+        src="/images/people/carrie_bell.png"
         alt="Headshot of Carrie Bell"
         width={200}
         height={200}
