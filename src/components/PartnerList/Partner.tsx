@@ -56,7 +56,9 @@ type PartnerProps =
 const Partner = (props: PartnerProps) => {
   return (
     <Box sx={itemContainer} gridArea={props.area}>
-      {!("image" in props) ? (
+      {"image" in props ? (
+        props.image
+      ) : (
         <Image
           style={logo}
           src={props.src}
@@ -64,8 +66,6 @@ const Partner = (props: PartnerProps) => {
           width={props.width}
           height={props.height}
         />
-      ) : (
-        props.image
       )}
       <span style={nameAndAward}>
         {props.name} &mdash; <AwardLink id={props.awardId} />
