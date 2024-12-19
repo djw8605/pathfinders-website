@@ -13,19 +13,15 @@ const wrapper: SxProps = {
     md: "flex",
     sm: "block",
   },
-  padding: "20px",
+  padding: "0 20px 20px 20px",
   gap: "10px",
 };
 
 const image: CSSProperties = {
   objectFit: "cover",
   aspectRatio: 2,
-  width: "auto",
-  maxWidth: "100%",
-};
-
-const text: CSSProperties = {
-  // textAlign: "justify",
+  width: "300px",
+  height: "auto",
 };
 
 const News = () => {
@@ -44,7 +40,7 @@ const News = () => {
             NOAA funded marine scientist uses OSPool access to high throughput
             computing to explode her boundaries of research
           </h3>
-          <p style={text}>
+          <p>
             Dr. Carrie Wall, a research scientist at the University of Colorado
             Boulder, shares how access to OSPool resources has allowed her team
             to expand the scope of their research and to fail, unconstrained by

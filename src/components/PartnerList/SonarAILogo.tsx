@@ -3,18 +3,10 @@ import Image from "next/image";
 import { CSSProperties } from "react";
 
 const container: SxProps = {
-  width: "100%",
-  height: "100%",
+  width: "400px",
+  maxWidth: "100%",
   display: "flex",
   flexDirection: "column",
-};
-
-const name: CSSProperties = {
-  display: "block",
-  fontSize: "2rem",
-  fontWeight: "bold",
-  marginBottom: "20px",
-  textAlign: "center",
 };
 
 const logosContainer: SxProps = {
@@ -40,7 +32,6 @@ const logo: CSSProperties = {
 const SonarAILogo = () => {
   return (
     <Box sx={container}>
-      <span style={name}>Sonar AI</span>
       <Box sx={logosContainer}>
         <Image
           style={{ ...logo, gridTemplate: "a" }}

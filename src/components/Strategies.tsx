@@ -1,6 +1,5 @@
 import { SxProps } from "@mui/material";
 import { Box } from "@mui/system";
-import Link from "next/link";
 import { CSSProperties } from "react";
 import {
   CodeOutlined,
@@ -8,6 +7,7 @@ import {
   MemoryOutlined,
   PublicOutlined,
 } from "@mui/icons-material";
+import AwardLink from "./AwardLink";
 
 const header: CSSProperties = {
   fontSize: "3rem",
@@ -21,19 +21,17 @@ const cardContainer: SxProps = {
     xs: "block",
     sm: "grid",
   },
+  paddingBottom: "20px",
+
   gridTemplateColumns: "1fr 1fr",
   gridTemplateRows: "1fr 1fr",
-  gap: "20px",
+  gap: "30px",
   justifyContent: "center",
 };
 
 const card: SxProps = {
-  // display: "flex",
-  // flexDirection: "column",
-  // alignItems: "center",
-  // justifyContent: "center",
   padding: "20px",
-  margin: "10px",
+
   borderRadius: "20px",
   bgcolor: "primary.main",
   boxShadow: 1,
@@ -44,17 +42,13 @@ const title: CSSProperties = {
   fontWeight: 500,
 };
 
-const link: CSSProperties = {
-  textDecoration: "underline",
-  fontStyle: "italic",
-};
-
 const cardTop: SxProps = {
   display: "flex",
-  justifyContent: "space-between",
-  alignContent: "center",
   width: "100%",
   marginBottom: "10px",
+
+  justifyContent: "space-between",
+  alignContent: "center",
 };
 
 const icon: SxProps = {
@@ -63,18 +57,6 @@ const icon: SxProps = {
   marginLeft: "-10px",
   marginBottom: "-30px",
 };
-
-function awardLink(name: string, id: string) {
-  return (
-    <Link
-      style={link}
-      href={`https://www.nsf.gov/awardsearch/showAward?AWD_ID=${id}`}
-      target="_blank"
-    >
-      {name}
-    </Link>
-  );
-}
 
 const Strategies = () => {
   return (
@@ -100,10 +82,11 @@ const Strategies = () => {
           </Box>
           <p>
             As the collaboration becomes more established, integrating more
-            partners like the {awardLink("NDP", "2333609")},{" "}
-            {awardLink("DeltaAI", "2320345")},{" "}
-            {awardLink("Stampede3", "2320757")}, {awardLink("SAGE", "2331263")},
-            and {awardLink("NSDF", "2138811")}.
+            partners like the <AwardLink name="NDP" id="2333609" />,{" "}
+            <AwardLink name="DeltaAI" id="2320345" />,{" "}
+            <AwardLink name="Stampede3" id="2320757" />,{" "}
+            <AwardLink name="SAGE" id="2331263" />, and{" "}
+            <AwardLink name="NSDF" id="2138811" />.
           </p>
         </Box>
         <Box sx={card}>
@@ -122,9 +105,9 @@ const Strategies = () => {
             <PublicOutlined sx={icon} fontSize="large" />
           </Box>
           <p>
-            With the {awardLink("MS-CC", "2234326")}, working to empower climate
-            scientists at Jackson State University to have local access to NCAR
-            data.
+            With the <AwardLink name="MS-CC" id="2234326" />, working to empower
+            climate scientists at Jackson State University to have local access
+            to NCAR data.
           </p>
         </Box>
       </Box>

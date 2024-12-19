@@ -19,7 +19,7 @@ export default function RootLayout({
       <ThemeProviderClient>
         <body>
           <Header />
-          <main>{children}</main>
+          {children}
         </body>
       </ThemeProviderClient>
     </html>

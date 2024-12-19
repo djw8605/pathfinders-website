@@ -5,12 +5,12 @@ const header: CSSProperties = {
   fontSize: "3rem",
   textAlign: "center",
   fontWeight: 300,
-  margin: "20px 0",
+  margin: "48px",
 };
 
 const Team = () => {
   return (
-    <div id="team">
+    <div id="team-leaders">
       <hr />
       <h2 style={header}>Team Leaders</h2>
       <People />

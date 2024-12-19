@@ -15,7 +15,7 @@ const graphicContainer: CSSProperties = {
   justifyContent: "space-between",
   width: "100%",
   height: "100%",
-  opacity: 0.05,
+  opacity: 0.03,
 };
 
 const leftEndcap: SxProps = {
