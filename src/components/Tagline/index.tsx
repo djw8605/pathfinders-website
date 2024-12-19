@@ -20,6 +20,10 @@ const taglineContainer: SxProps = {
   flexDirection: "column",
 };
 
+const text: SxProps = {
+  padding: "0 20px",
+};
+
 const taglineText: CSSProperties = {
   fontSize: "2rem",
   textAlign: "center",
@@ -32,7 +36,7 @@ const subtextContainer: SxProps = {
 };
 
 const subtext: CSSProperties = {
-  maxWidth: "1000px",
+  maxWidth: "800px",
   fontSize: "1.25rem",
   textAlign: "center",
 };
@@ -41,19 +45,22 @@ const Tagline = () => {
   return (
     <Box sx={taglineContainer}>
       <Graphic />
-      <span style={taglineText}>
-        <Balancer>
-          Advancing Earth Science and Innovating Data Access and Sharing
-        </Balancer>
-      </span>
-      <br />
-      <Box sx={subtextContainer}>
-        <span style={subtext}>
-          A collaboration between 5 projects, working to innovate science-led
-          pathways through the NSF cyberinfrastructure landscape, with the
-          mission to to build exemplars using NDC-C-funded cyberinfrastructure
-          for other earth science teams to follow.
+      <Box sx={text}>
+        <span style={taglineText}>
+          <Balancer>
+            Advancing Earth Science and Innovating Data Access and Sharing
+          </Balancer>
         </span>
+        <br />
+        <br />
+        <Box sx={subtextContainer}>
+          <span style={subtext}>
+            A collaboration between 5 projects, working to innovate science-led
+            pathways through the NSF cyberinfrastructure landscape, with the
+            mission to to build exemplars using NDC-C-funded cyberinfrastructure
+            for other earth science teams to follow.
+          </span>
+        </Box>
       </Box>
     </Box>
   );

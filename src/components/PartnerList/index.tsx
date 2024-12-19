@@ -3,6 +3,7 @@ import Image from "next/image";
 import { CSSProperties } from "react";
 import AwardLink from "../AwardLink";
 import SonarAILogo from "./SonarAILogo";
+import Partner, { itemContainer, logo, nameAndAward } from "./Partner";
 
 const grid: SxProps = {
   width: "100%",
@@ -16,34 +17,6 @@ const grid: SxProps = {
     "c c d d"
     "e e e e"
   `,
-};
-
-const itemContainer: SxProps = {
-  bgcolor: "primary.main",
-  width: "100%",
-
-  // margin: "10px",
-  padding: "20px",
-  borderRadius: "20px",
-  boxShadow: 1,
-
-  flexDirection: "column",
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-};
-
-const logo: CSSProperties = {
-  width: "300px",
-  maxWidth: "100%",
-  height: "auto",
-  objectFit: "contain",
-};
-
-const nameAndAward: CSSProperties = {
-  fontSize: "1.5rem",
-  textAlign: "center",
-  padding: "10px 0",
 };
 
 // pelican styles
@@ -86,52 +59,44 @@ const PartnerList = () => {
 
   return (
     <Box sx={grid}>
-      <Box sx={itemContainer} gridArea="a">
-        <Image
-          style={logo}
-          src="/images/logos/ncar_logo.png"
-          alt="NCAR Logo"
-          width={518 * 0.6}
-          height={142 * 0.6}
-        />
-        <span style={nameAndAward}>
-          NCAR &mdash; <AwardLink id="1852977" />
-        </span>
-        <p>{loremIpsum}</p>
-      </Box>
-      <Box sx={itemContainer} gridArea="b">
-        <Image
-          style={logo}
-          src="/images/logos/pism_logo.png"
-          alt="PISM Logo"
-          width={1000 * 0.28}
-          height={332 * 0.28}
-        />
-        <span style={nameAndAward}>
-          PISM &mdash; <AwardLink id="2324718" />
-        </span>
-        <p>{loremIpsum}</p>
-      </Box>
-      <Box sx={itemContainer} gridArea="c">
-        <Image
-          style={logo}
-          src="/images/logos/fiu_logo.svg"
-          alt="FIU Logo"
-          width={221.7}
-          height={102.8}
-        />
-        <span style={nameAndAward}>
-          EnviStor &mdash; <AwardLink id="2322308" />
-        </span>
-        <p>{loremIpsum}</p>
-      </Box>
-      <Box sx={itemContainer} gridArea="d">
-        <SonarAILogo />
-        <span style={nameAndAward}>
-          Sonar AI &mdash; <AwardLink id="2311843" />
-        </span>
-        <p>{loremIpsum}</p>
-      </Box>
+      <Partner
+        area="a"
+        src="/images/logos/ncar_logo.png"
+        alt="NCAR Logo"
+        name="NCAR"
+        width={518 * 0.6}
+        height={142 * 0.6}
+        awardId="1852977"
+        text={loremIpsum}
+      />
+      <Partner
+        area="b"
+        src="/images/logos/pism_logo.png"
+        alt="PISM Logo"
+        name="PISM"
+        width={1000 * 0.28}
+        height={332 * 0.28}
+        awardId="2324718"
+        text={loremIpsum}
+      />
+      <Partner
+        area="c"
+        src="/images/logos/fiu_logo.svg"
+        alt="FIU Logo"
+        name="EnviStor"
+        width={221.7}
+        height={102.8}
+        awardId="2322308"
+        text={loremIpsum}
+      />
+      <Partner
+        area="d"
+        name="Sonar AI"
+        awardId="2311843"
+        text={loremIpsum}
+        image={<SonarAILogo />}
+      />
+
       <Box sx={pelicanItem} gridArea="e">
         <Box sx={pelicanLeft}>
           <Image
