@@ -11,6 +11,7 @@ const graphicContainer: CSSProperties = {
   left: "0",
   zIndex: -1,
   overflow: "hidden",
+  paddingTop: `110px`,
 
   display: "flex",
   justifyContent: "space-between",
@@ -50,21 +51,21 @@ const Graphic = () => {
       <Image
         style={leftEndcap}
         src="/lines_end.svg"
-        alt="bad graphic"
+        alt=""
         width={width}
         height={height}
       />
       <Image
         style={middle}
         src="/lines_middle.svg"
-        alt="bad graphic"
+        alt=""
         width={width}
         height={height}
       />
       <Image
         style={rightEndcap}
         src="/lines_end.svg"
-        alt="bad graphic"
+        alt=""
         width={width}
         height={height}
       />
