@@ -25,12 +25,12 @@ const cardContainer: SxProps = {
 
   gridTemplateColumns: "1fr 1fr",
   gridTemplateRows: "1fr 1fr",
-  gap: "30px",
   justifyContent: "center",
 };
 
 const card: SxProps = {
   padding: "20px",
+  margin: "15px",
 
   borderRadius: "20px",
   bgcolor: "primary.main",
