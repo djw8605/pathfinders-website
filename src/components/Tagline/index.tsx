@@ -56,9 +56,7 @@ const Tagline = () => {
         <Box sx={subtextContainer}>
           <span style={subtext}>
             A collaboration between 5 projects, working to innovate science-led
-            pathways through the NSF cyberinfrastructure landscape, with the
-            mission to to build exemplars using NDC-C-funded cyberinfrastructure
-            for other earth science teams to follow.
+            pathways through the NSF cyberinfrastructure landscape.
           </span>
         </Box>
       </Box>
