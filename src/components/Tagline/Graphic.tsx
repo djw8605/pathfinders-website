@@ -1,9 +1,8 @@
-import { Box } from "@mui/material";
+import { Box, SxProps } from "@mui/material";
 import Image from "next/image";
 import { CSSProperties } from "react";
 
-const size = 300;
-const inverseMargin = "106px";
+const SIZE = 300;
 
 const graphicContainer: CSSProperties = {
   position: "absolute",
@@ -11,7 +10,6 @@ const graphicContainer: CSSProperties = {
   left: "0",
   zIndex: -1,
   overflow: "hidden",
-  paddingTop: `110px`,
 
   display: "flex",
   justifyContent: "space-between",
@@ -20,55 +18,69 @@ const graphicContainer: CSSProperties = {
   opacity: 0.05,
 };
 
-const component: CSSProperties = {};
-
-const leftEndcap: CSSProperties = {
-  ...component,
-  margin: `-${inverseMargin}`,
+const leftEndcap: SxProps = {
+  display: {
+    xs: "none",
+    sm: "block",
+  },
   transform: "scaleX(-1)",
   flexShrink: 0,
 };
 
-const middle: CSSProperties = {
-  ...component,
-  margin: `-${inverseMargin} 0`,
-  width: "100%",
+const middle: SxProps = {
+  width: {
+    xs: "100vw",
+    sm: "100%",
+  },
   flexGrow: 1,
 };
 
-const rightEndcap: CSSProperties = {
-  ...component,
-  margin: `-${inverseMargin}`,
+const rightEndcap: SxProps = {
+  display: {
+    xs: "none",
+    sm: "block",
+  },
   flexShrink: 0,
 };
 
+const img: CSSProperties = {
+  width: "100%",
+  height: "100%",
+};
+
 const Graphic = () => {
-  const width = size;
-  const height = size;
+  const width = SIZE;
+  const height = SIZE;
 
   return (
     <Box sx={graphicContainer}>
-      <Image
-        style={leftEndcap}
-        src="/lines_end.svg"
-        alt=""
-        width={width}
-        height={height}
-      />
-      <Image
-        style={middle}
-        src="/lines_middle.svg"
-        alt=""
-        width={width}
-        height={height}
-      />
-      <Image
-        style={rightEndcap}
-        src="/lines_end.svg"
-        alt=""
-        width={width}
-        height={height}
-      />
+      <Box sx={leftEndcap}>
+        <Image
+          style={img}
+          src="/lines_end.svg"
+          alt=""
+          width={width}
+          height={height}
+        />
+      </Box>
+      <Box sx={middle}>
+        <Image
+          style={img}
+          src="/lines_middle.svg"
+          alt=""
+          width={width}
+          height={height}
+        />
+      </Box>
+      <Box sx={rightEndcap}>
+        <Image
+          style={img}
+          src="/lines_end.svg"
+          alt=""
+          width={width}
+          height={height}
+        />
+      </Box>
     </Box>
   );
 };
