@@ -17,20 +17,23 @@ const header: CSSProperties = {
 };
 
 const cardContainer: SxProps = {
-  display: {
-    xs: "block",
-    sm: "grid",
-  },
+  display: "grid",
   paddingBottom: "20px",
 
-  gridTemplateColumns: "1fr 1fr",
-  gridTemplateRows: "1fr 1fr",
+  gridTemplateColumns: {
+    xs: "1fr",
+    sm: "1fr 1fr",
+  },
+  gridTemplateRows: {
+    xs: "1fr 1fr 1fr 1fr",
+    sm: "1fr 1fr",
+  },
   justifyContent: "center",
+  gap: "20px",
 };
 
 const card: SxProps = {
   padding: "20px",
-  margin: "10px",
 
   borderRadius: "20px",
   bgcolor: "primary.main",

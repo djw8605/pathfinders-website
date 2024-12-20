@@ -36,6 +36,11 @@ const pelicanItem: SxProps = {
   width: "100%",
 
   flexDirection: "row",
+
+  display: {
+    xs: "block",
+    sm: "flex",
+  },
 };
 
 const pelicanLeft: SxProps = {
