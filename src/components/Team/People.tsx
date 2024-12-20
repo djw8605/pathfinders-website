@@ -20,11 +20,11 @@ const People = () => {
         project="Pelican"
       />
       <PersonCard
-        src="/images/people/everette_joseph.jpg"
-        alt="Headshot of Everette Joseph"
+        src="/images/people/doug_schuster.png"
+        alt="Headshot of Doug Schuster"
         width={200}
         height={200}
-        name="Everette Joseph"
+        name="Doug Schuster"
         title="Principal Investigator"
         project="NCAR"
       />
