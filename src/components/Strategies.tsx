@@ -30,7 +30,7 @@ const cardContainer: SxProps = {
 
 const card: SxProps = {
   padding: "20px",
-  margin: "15px",
+  margin: "10px",
 
   borderRadius: "20px",
   bgcolor: "primary.main",

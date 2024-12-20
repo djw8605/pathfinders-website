@@ -5,7 +5,7 @@ import { CSSProperties, ReactNode } from "react";
 
 const itemContainer: SxProps = {
   bgcolor: "primary.main",
-  width: "100%",
+  maxWidth: "100%",
 
   padding: "20px",
   borderRadius: "20px",

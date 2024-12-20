@@ -10,17 +10,33 @@ const newsImage =
 
 const wrapper: SxProps = {
   display: {
+    xs: "block",
     md: "flex",
-    sm: "block",
   },
   padding: "0 20px 20px 20px",
   gap: "10px",
 };
 
+const imageWrapper: SxProps = {
+  display: "flex",
+  justifyContent: "center",
+  width: {
+    xs: "100%",
+    md: "300px",
+  },
+  maxWidth: "420px",
+  flexShrink: 0,
+  margin: "0 auto",
+  marginBottom: {
+    xs: "20px",
+    md: 0,
+  },
+};
+
 const image: CSSProperties = {
   objectFit: "cover",
   aspectRatio: 2,
-  width: "300px",
+  width: "100%",
   height: "auto",
 };
 
@@ -28,13 +44,15 @@ const News = () => {
   return (
     <Link href={newsLink} target="_blank">
       <Box sx={wrapper}>
-        <Image
-          style={image}
-          src={newsImage}
-          alt="News"
-          width={420}
-          height={210}
-        />
+        <Box sx={imageWrapper}>
+          <Image
+            style={image}
+            src={newsImage}
+            alt="News"
+            width={420}
+            height={210}
+          />
+        </Box>
         <Box>
           <h3>
             NOAA funded marine scientist uses OSPool access to high throughput

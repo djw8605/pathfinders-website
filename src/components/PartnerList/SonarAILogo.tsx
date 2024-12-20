@@ -3,8 +3,6 @@ import Image from "next/image";
 import { CSSProperties } from "react";
 
 const container: SxProps = {
-  width: "400px",
-  maxWidth: "100%",
   display: "flex",
   flexDirection: "column",
 };
@@ -24,7 +22,7 @@ const logosContainer: SxProps = {
 };
 
 const logo: CSSProperties = {
-  width: "25%",
+  width: "20%",
   height: "auto",
   objectFit: "contain",
 };

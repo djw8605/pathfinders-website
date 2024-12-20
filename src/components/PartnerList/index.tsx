@@ -10,13 +10,22 @@ const grid: SxProps = {
   display: "grid",
   padding: "20px 0",
 
-  gap: "30px",
+  gap: "20px",
   gridAutoColumns: "1fr",
-  gridTemplateAreas: `
-    "a a b b"
-    "c c d d"
-    "e e e e"
-  `,
+  gridTemplateAreas: {
+    xs: `
+      "a"
+      "b"
+      "c"
+      "d"
+      "e"
+    `,
+    md: `
+      "a a b b"
+      "c c d d"
+      "e e e e"
+    `,
+  },
 };
 
 // pelican styles
