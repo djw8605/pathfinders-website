@@ -1,4 +1,5 @@
-import { Box, SxProps } from "@mui/material";
+import {Box, SxProps} from "@mui/material";
+import {Grid} from "@mui/system";
 import { CSSProperties } from "react";
 import Balancer from "react-wrap-balancer";
 import Graphic from "./Graphic";
@@ -46,13 +47,15 @@ const Tagline = () => {
     <Box sx={taglineContainer}>
       <Graphic />
       <Box sx={text}>
-        <span style={taglineText}>
-          <Balancer>
-            Advancing Earth Science and Innovating Data Access and Sharing
-          </Balancer>
-        </span>
-        <br />
-        <br />
+        <Grid container justifyContent={'center'} pb={1}>
+          <Grid size={{xs: 12, md: 10, lg: 8}}>
+            <span style={taglineText}>
+              <Balancer>
+                Advancing Earth Science and Innovating Data Access and Sharing
+              </Balancer>
+            </span>
+          </Grid>
+        </Grid>
         <Box sx={subtextContainer}>
           <span style={subtext}>
             A collaboration between 5 projects, working to innovate science-led

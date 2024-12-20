@@ -5,8 +5,8 @@ import { CSSProperties } from "react";
 const card: SxProps = {
   display: "flex",
   padding: "20px",
-  width: "250px",
-  margin: "20px",
+  width: "100%",
+  flexGrow: 1,
 
   flexDirection: "column",
   alignItems: "center",
@@ -18,10 +18,11 @@ const card: SxProps = {
 };
 
 const headshot: CSSProperties = {
-  width: "175px",
-  height: "175px",
   borderRadius: "50%",
   objectFit: "cover",
+  aspectRatio: "1/1",
+  width: "100%",
+  height: "auto"
 };
 
 const nameStyle: CSSProperties = {
@@ -35,26 +36,26 @@ const textSpacer: SxProps = {
 
 const text: CSSProperties = {
   display: "block",
+  textAlign: "center"
 };
 
 type Props = {
   src: string;
   alt: string;
-  width: number;
-  height: number;
   name: string;
   title: string;
   project: string;
+  width?: number;
+  height?: number;
 };
 
 const PersonCard = ({
   src,
   alt,
-  width,
-  height,
   name,
-  title,
   project,
+  width = 200,
+  height = 200
 }: Props) => {
   return (
     <Box sx={card}>
@@ -67,7 +68,6 @@ const PersonCard = ({
       />
       <h3 style={nameStyle}>{name}</h3>
       <Box sx={textSpacer}>
-        <span style={text}>{title}</span>
         <span style={text}>{project}</span>
       </Box>
     </Box>

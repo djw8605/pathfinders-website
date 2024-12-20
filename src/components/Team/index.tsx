@@ -1,5 +1,6 @@
 import { CSSProperties } from "react";
 import People from "./People";
+import TeamImage from "./TeamImage";
 
 const header: CSSProperties = {
   fontSize: "3rem",
@@ -12,8 +13,9 @@ const Team = () => {
   return (
     <div id="team-leaders">
       <hr />
-      <h2 style={header}>Team Leaders</h2>
+      <h2 style={header}>Pathfinder Team</h2>
       <People />
+      <TeamImage />
     </div>
   );
 };
