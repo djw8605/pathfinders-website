@@ -22,19 +22,16 @@ const logo: CSSProperties = {
   maxWidth: "100%",
   height: "auto",
   objectFit: "contain",
+  flexGrow: 1,
 };
 
 const nameAndAward: CSSProperties = {
   fontSize: "1.25rem",
   textAlign: "center",
-  padding: "10px 0",
+  flexShrink: 0,
 };
 
-const text: CSSProperties = {
-  // fontSize: "0.75rem",
-};
-
-type PartnerProps =
+type PartnerProps = (
   | {
       area: string;
       src: string;
@@ -51,11 +48,14 @@ type PartnerProps =
       name: string;
       awardId: string;
       text: string;
-    };
+    }
+) & {
+  itemStyles?: SxProps;
+};
 
 const Partner = (props: PartnerProps) => {
   return (
-    <Box sx={itemContainer} gridArea={props.area}>
+    <Box sx={{ ...itemContainer, ...props.itemStyles }} gridArea={props.area}>
       {"image" in props ? (
         props.image
       ) : (
@@ -70,7 +70,6 @@ const Partner = (props: PartnerProps) => {
       <span style={nameAndAward}>
         {props.name} &mdash; <AwardLink id={props.awardId} />
       </span>
-      <p style={text}>{props.text}</p>
     </Box>
   );
 };

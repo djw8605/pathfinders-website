@@ -1,67 +1,26 @@
 import { Box, SxProps } from "@mui/material";
-import Image from "next/image";
-import { CSSProperties } from "react";
-import AwardLink from "../AwardLink";
+import Partner from "./Partner";
 import SonarAILogo from "./SonarAILogo";
-import Partner, { itemContainer, logo, nameAndAward } from "./Partner";
 
 const grid: SxProps = {
   width: "100%",
   display: "grid",
   padding: "20px 0",
 
-  gap: "20px",
+  gap: "30px",
   gridAutoColumns: "1fr",
+  gridAutoRows: "1fr",
   gridTemplateAreas: {
     xs: `
-      "a"
-      "b"
-      "c"
-      "d"
-      "e"
+      "a b"
+      "c d"
+      "e e"
     `,
     md: `
-      "a a b b"
-      "c c d d"
-      "e e e e"
+      "a a a b b b c c c d d d"
+      ". . . . e e e e . . . ."
     `,
   },
-};
-
-// pelican styles
-
-const pelicanItem: SxProps = {
-  ...itemContainer,
-  bgcolor: "secondary.main",
-  width: "100%",
-
-  flexDirection: "row",
-
-  display: {
-    xs: "block",
-    sm: "flex",
-  },
-};
-
-const pelicanLeft: SxProps = {
-  maxWidth: "100%",
-  marginRight: "20px",
-  flexShrink: 0,
-};
-
-const pelicanLogo: CSSProperties = {
-  ...logo,
-  width: "200px",
-  margin: "0 auto",
-};
-
-const pelicanRight = {
-  display: "flex",
-  flexGrow: 1,
-
-  flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "center",
 };
 
 const PartnerList = () => {
@@ -78,8 +37,8 @@ const PartnerList = () => {
         src="/images/logos/ncar_logo.png"
         alt="NCAR Logo"
         name="NCAR"
-        width={518 * 0.6}
-        height={142 * 0.6}
+        width={518}
+        height={142}
         awardId="1852977"
         text={loremIpsum}
       />
@@ -88,8 +47,8 @@ const PartnerList = () => {
         src="/images/logos/pism_logo.png"
         alt="PISM Logo"
         name="PISM"
-        width={1000 * 0.28}
-        height={332 * 0.28}
+        width={1000 * 0.5}
+        height={332 * 0.5}
         awardId="2324718"
         text={loremIpsum}
       />
@@ -110,24 +69,19 @@ const PartnerList = () => {
         text={loremIpsum}
         image={<SonarAILogo />}
       />
-
-      <Box sx={pelicanItem} gridArea="e">
-        <Box sx={pelicanLeft}>
-          <Image
-            style={pelicanLogo}
-            src="/images/logos/pelican_logo.png"
-            alt="Pelican Logo"
-            width={400}
-            height={395}
-          />
-        </Box>
-        <Box sx={pelicanRight}>
-          <span style={nameAndAward}>
-            Pelican &mdash; <AwardLink id="2324718" />
-          </span>
-          <p>{loremIpsum}</p>
-        </Box>
-      </Box>
+      <Partner
+        area="e"
+        src="/images/logos/pelican_full_logo.png"
+        alt="Pelican Logo"
+        name="Pelican"
+        width={500}
+        height={178}
+        awardId="2324718"
+        text={loremIpsum}
+        itemStyles={{
+          bgcolor: "secondary.main",
+        }}
+      />
     </Box>
   );
 };

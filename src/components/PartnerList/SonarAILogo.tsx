@@ -22,7 +22,7 @@ const logosContainer: SxProps = {
 };
 
 const logo: CSSProperties = {
-  width: "20%",
+  width: "33%",
   height: "auto",
   objectFit: "contain",
 };
